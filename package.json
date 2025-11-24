@@ -1,0 +1,26 @@
+{
+  "name": "human-verification-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "mongodb": "^5.9.0",
+    "formidable": "^2.1.2",
+    "csv-parser": "^3.0.0",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.9"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
+

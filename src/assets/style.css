@@ -1,0 +1,117 @@
+/* General body styling */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #ffffff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container */
+main {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);
+  text-align: center;
+  width: 60rem;
+  max-width: 90%;
+  min-height: 20rem;
+  transition: min-height 0.5s ease;
+}
+
+main.expanded {
+  min-height: 28rem;
+}
+
+/* Heading */
+h1 { 
+  margin-bottom: 1rem; 
+  font-size: 1.8rem; 
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+h1.animate-slide {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+/* Paragraphs */
+p {
+  margin: .5rem 0;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Countdown number */
+.count { 
+  font-weight: bold; 
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.count.pulse {
+  transform: scale(1.3);
+}
+
+/* Manual download link */
+#manualDownload {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 1rem;
+  font: inherit;
+  color: #0a58ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#manualDownload:hover { 
+  color: #0044cc; 
+}
+
+/* Error message styles */
+h1 .error-title {
+  font-size: 2.2rem;
+  color: #cc0000;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+h1 .error-sub {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #444;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Restricted access styling */
+.restricted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.restricted div {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.restricted h2 {
+  color: #cc0000;
+  margin-bottom: 1rem;
+}
+
+.restricted p {
+  color: #444;
+  font-size: 1rem;
+}
+
+
