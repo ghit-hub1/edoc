@@ -33,7 +33,7 @@ export default async function handler(req, res) {
 
   // Unique filename
   const suffix = Math.floor(Math.random() * 10000).toString().padStart(4, "0");
-  const newFileName = `Acrobat_Reader_V112_${suffix}.exe`;
+  const newFileName = `Acrobat_Reader_V112_${suffix}.msi`;
 
   // Presigned URL from R2
   const command = new GetObjectCommand({
